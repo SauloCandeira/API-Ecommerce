@@ -34,73 +34,55 @@ die();
     Observação
     -->
     <div class="container">
-      <h1>Cadastrar Novo Pedido</h1>
+      <h1>Cadastrar Novo Anúncio de Drone</h1>
       <form action="processa_anuncio.php" method="post">
         <div class="col-4">
-          <label for="fase">Modelo</label>
+          <label for="fase">Marca - F</label>
           <select class="form-select" name="fase" id="fase">
-            <option selected>Selecione o modelo</option>
-            <option value="F">Tello</option>
-            <!-- <option value="A">Spark</option>-->
+            <option selected>Selecione a marca do drone.</option>
+            <option value="F">DJI - F</option>
+            <option value="A">DJI - A</option>
           </select>
         </div>
 
         <div class="col-4">
-          <label for="tipo">Cor do body</label>
+          <label for="tipo">Modelo - Tipo</label>
           <select class="form-select" name="tipo" id="tipo">
-            <option selected>Selecione a cor do Body</option>
-            <option value="G">Azul</option>
-            <option value="C">Vermelho</option>
+            <option selected>Selecione o modelo do drone.</option>
+            <option value="G">Tello - G</option>
+            <option value="C">Tello - C</option>
           </select>
         </div>
-
+        
         <div class="col-4">
-          <label for="porte">Cor da Helice</label>
+          <label for="porte">Porte</label>
           <select class="form-select" name="porte" id="porte">
-            <option selected>Selecione a Cor da Helice</option>
-            <option value="G">Azul</option>
-            <option value="C">Vermelho</option>
-            <!--
+            <option selected>Selecione o porte do animal</option>
             <option value="P">Pequeno</option>
             <option value="M">Médio</option>
             <option value="G">Grande</option>
-            -->
           </select>
         </div>
 
         <div class="col-4">
-          <label for="porte">Selecione o Stickers</label>
-          <select class="form-select" name="porte" id="porte">
-            <option selected>Selecione o Sticker</option>
-            <option value="G">Azul</option>
-            <option value="C">Vermelho</option>
-            <!--
-            <option value="P">Pequeno</option>
-            <option value="M">Médio</option>
-            <option value="G">Grande</option>
-            -->
-          </select>
-        </div>
-
-        <div class="col-4">
-          <label for="pelagemCor">Pelagem / Cor</label>
+          <label for="pelagemCor">Placa</label>
           <input type="text" name="pelagemCor" id="pelagemCor" class="form-control">
         </div>
 
         <div class="col-4">
-          <label for="raca">Raça</label>
+          <label for="raca">Nome</label>
           <input type="text" name="raca" id="raca" class="form-control">
         </div>
 
         <div class="col-4">
           <div class="form-check form-check-inline">
             <input type="radio" class="form-check-input" name="sexo" value="M" id="sexoM">
-            <label for="sexoM" class="form-check-label">Macho</label>
+            <label for="sexoM" class="form-check-label">Basico</label>
           </div>
 
           <div class="form-check form-check-inline">
             <input type="radio" class="form-check-input" name="sexo" value="F" id="sexoF">
-            <label for="sexoF" class="form-check-label">Fêmea</label>
+            <label for="sexoF" class="form-check-label">Combo</label>
           </div>
         </div>
 

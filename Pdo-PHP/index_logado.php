@@ -106,12 +106,22 @@ if (!empty($_GET['meus_anuncios']) && $_GET['meus_anuncios'] == 1) {
         <table class="table table-striped">
           <thead>
             <tr>
+              <!-- 
               <th scope="col">#</th>
               <th scope="col">Fase</th>
               <th scope="col">Tipo</th>
               <th scope="col">Pelagem / Cor</th>
               <th scope="col">Raça</th>
               <th scope="col">Sexo</th>
+              <th scope="col">Ações</th>
+
+              -->
+              <th scope="col">#</th>
+              <th scope="col">Marca</th>
+              <th scope="col">Modelo</th>
+              <th scope="col">Placa</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Items</th>
               <th scope="col">Ações</th>
             </tr>
           </thead>
@@ -122,16 +132,16 @@ if (!empty($_GET['meus_anuncios']) && $_GET['meus_anuncios'] == 1) {
                 <td>
                   <?php
                     if ($a['fase'] == 'A') {
-                      echo "Adulto";
+                      echo "DJI - A";
                     } else {
-                      echo "Filhote";
+                      echo "DJI - F";
                     }
                   ?>
                 </td>
-                <td><?php echo $a['tipo'] == 'G' ? "Gato" : "Cachorro"; ?></td>
+                <td><?php echo $a['tipo'] == 'G' ? "Tello - G" : "Tello - C"; ?></td>
                 <td><?php echo $a['pelagem_cor']; ?></td>
                 <td><?php echo $a['raca']; ?></td>
-                <td><?php echo $a['sexo'] == 'M' ? "Macho" : "Fêmea"; ?></td>
+                <td><?php echo $a['sexo'] == 'M' ? "Basico - M" : "Combo - F"; ?></td>
                 <td>
                   <?php if ($a['email_usuario'] == $_SESSION['email']) { ?>
                     <a href="alt_anuncio.php?id_anuncio=<?php echo $a['id']; ?>" class="btn btn-warning">Alterar</a>
